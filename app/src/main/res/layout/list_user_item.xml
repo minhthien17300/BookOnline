@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/wooder_news_one" />
+
+    <TextView
+        android:id="@+id/userlist_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Mã khách hàng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/userlist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Tên khách hàng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist_code" />
+
+    <TextView
+        android:id="@+id/userlist_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Năm sinh"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist_name" />
+
+    <TextView
+        android:id="@+id/userlist_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist_birth" />
+
+    <TextView
+        android:id="@+id/userlist_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Địa chỉ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist_mail" />
+
+    <TextView
+        android:id="@+id/userlist_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Số điện thoại"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userlist_address" />
+</androidx.constraintlayout.widget.ConstraintLayout>

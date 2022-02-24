@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="useravt" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">#193AEB
+        </item>
+    </style>
+    <style name="cancel" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">#E1051F</item>
+    </style>
+    <style name="button" parent="Base.TextAppearance.AppCompat.Button" >
+        <item name="backgroundTint">#fff
+        </item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+</resources>

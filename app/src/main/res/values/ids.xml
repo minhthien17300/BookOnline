@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_user" type="id" />
+    <item name="tv_login" type="id" />
+    <item name="register_name" type="id" />
+    <item name="register_edit_name" type="id" />
+    <item name="register_yearofBirth" type="id" />
+    <item name="register_edit_yearofBirth" type="id" />
+    <item name="register_phone" type="id" />
+    <item name="register_edit_phone" type="id" />
+    <item name="register_address" type="id" />
+    <item name="register_edit_address" type="id" />
+    <item name="register_sex" type="id" />
+    <item name="register_email" type="id" />
+    <item name="register_edit_email" type="id" />
+    <item name="register_pass" type="id" />
+    <item name="register_edit_pass" type="id" />
+    <item name="register_confirmpass" type="id" />
+    <item name="register_edit_confirmpass" type="id" />
+    <item name="btn_register" type="id" />
+    <item name="checkBox_man" type="id" />
+    <item name="checkBox_woman" type="id" />
+    <item name="dialogError2_name" type="id" />
+    <item name="dialogError2_content" type="id" />
+    <item name="btn_dialogError_Oke" type="id" />
+</resources>

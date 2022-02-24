@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txtCatagory"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/txtImageProduct"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtProductNameHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Tên sản phẩm:"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ellebaskerville"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtImageProduct" />
+
+    <TextView
+        android:id="@+id/txtPriceHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Giá:"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ellebaskerville"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProductNameHistory" />
+
+    <TextView
+        android:id="@+id/txtAmountHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Số lượng:"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ellebaskerville"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPriceHistory" />
+
+    <TextView
+        android:id="@+id/txtCategoryHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Loại:"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ellebaskerville"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAmountHistory" />
+
+    <TextView
+        android:id="@+id/txtDateHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="date"
+        android:text="Ngày mua:"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ellebaskerville"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategoryHistory" />
+
+    <TextView
+        android:id="@+id/txtTotalMoneyHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tổng tiền:"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ellebaskerville"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateHistory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        app:tint="#193AEB"
+        tools:ignore="MissingConstraints,VectorDrawableCompat"
+        tools:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/ellebaskerville_bold"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="137dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
+
+
+
+    <EditText
+        android:id="@+id/login_edit_email"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:fontFamily="@font/ellebaskerville"
+        android:background="@drawable/button"
+        android:hint="Enter your email"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/login_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:fontFamily="@font/ellebaskerville"
+        android:text="Password:"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_email" />
+
+    <EditText
+        android:id="@+id/login_edit_pass"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:fontFamily="@font/ellebaskerville"
+        android:background="@drawable/button"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_user"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/remember_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Nhớ tài khoản"
+        android:textSize="20dp"
+        android:fontFamily="@font/ellebaskerville"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_pass" />
+
+    <TextView
+        android:id="@+id/login_forgetpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ellebaskerville_bold"
+        android:text="Quên mật khẩu"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember_check" />
+
+    <TextView
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/ellebaskerville_bold"
+        android:text="Tạo tài khoản"
+        android:textColor="@color/black"
+        android:textFontWeight="500"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember_check" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/useravt"
+        android:layout_width="239dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="30dp"
+        android:text="Đăng nhập"
+        android:fontFamily="@font/ellebaskerville_bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_forgetpass" />
+</androidx.constraintlayout.widget.ConstraintLayout>

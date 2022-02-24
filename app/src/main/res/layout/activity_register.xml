@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginTop="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                app:tint="#193AEB"
+                tools:ignore="MissingConstraints,VectorDrawableCompat"
+                tools:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ellebaskerville_bold"
+                android:text="ĐĂNG KÝ"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/register_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="184dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Tên:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/register_edit_name"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_user"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/register_yearofBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Năm sinh:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_name" />
+
+            <EditText
+                android:id="@+id/register_edit_yearofBirth"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                android:hint="Enter your year of birth"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_name"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/register_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Số điện thoại:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_yearofBirth" />
+
+            <EditText
+                android:id="@+id/register_edit_phone"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                android:hint="Enter your phone"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_yearofBirth"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/register_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Địa chỉ:"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_phone" />
+
+            <EditText
+                android:id="@+id/register_edit_address"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                android:hint="Enter your address"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_phone"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/register_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Giới tính:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.039"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_address" />
+
+            <TextView
+                android:id="@+id/register_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Email:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_sex" />
+
+            <EditText
+                android:id="@+id/register_edit_email"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:fontFamily="@font/ellebaskerville"
+                android:hint="Enter your email"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox_man"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/register_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Password:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+            <EditText
+                android:id="@+id/register_edit_pass"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:hint="Enter your password"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.908"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_email"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/register_confirmpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Nhập lại:"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_pass" />
+
+            <EditText
+                android:id="@+id/register_edit_confirmpass"
+                android:layout_width="214dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:ems="10"
+                android:hint="Enter your confirm"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ellebaskerville"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.908"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_pass"
+                tools:ignore="MissingConstraints" />
+
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/useravt"
+                android:layout_width="239dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="36dp"
+                android:text="Đăng ký"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/ellebaskerville_bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_confirmpass" />
+
+            <CheckBox
+                android:id="@+id/checkBox_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Nam"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/checkBox_woman"
+                app:layout_constraintStart_toEndOf="@+id/register_sex"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_address" />
+
+            <CheckBox
+                android:id="@+id/checkBox_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="@font/ellebaskerville"
+                android:text="Nữ"
+                android:textColor="@color/black"
+                android:textFontWeight="500"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/checkBox_man"
+                app:layout_constraintTop_toBottomOf="@+id/register_edit_address" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
